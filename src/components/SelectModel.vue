@@ -8,7 +8,7 @@ const openModalButton = ref(null);
 const modal = ref(null);
 const buttonX = ref(null);
 
-const modelType = ref('GPT3.5 Turbo');
+const modelType = ref('GPT3.5');
 const emit = defineEmits(['selectModel']);
 
 function handleClick(model) {
@@ -35,15 +35,22 @@ function handleClick(model) {
 }
 
 const chatModels = [
-  { name: 'GPT3.5 Turbo' },
-  { name: 'GPT-4o Mini' },
-  { name: 'GPT-4 Nexra' },
-  { name: 'GPT-3.5 Turbo Nexra' },
-  { name: 'Command-R+' },
-  { name: 'Qwen' },
-  { name: 'Blackbox' },
-  { name: 'Gemini Pro' },
-  { name: 'Gemini' },
+    { name: 'GPT-3.5' },
+    { name: 'GPT-4o mini' },
+    { name: 'GPT-4' },
+    { name: 'SearchGPT' },
+    { name: 'GPT-3.5 Turbo' },
+    { name: 'Claude 3 Haiku' },
+    { name: 'Gemini' },
+    { name: 'Gemini Flash' },
+    { name: 'Llama 3.1' },
+    { name: 'Copilot' },
+    { name: 'Command-R+' },
+    { name: 'Qwen' },
+    { name: 'Blackbox' },
+    { name: 'Mixtral 8x7B' },
+    { name: 'evil' },
+    { name: 'Claude 3.5 Sonnet' },
 ];
 
 const imageModels = [
@@ -52,7 +59,7 @@ const imageModels = [
     { name: 'NSFW-XL' },
 ];
 
-const toggleModal = () => {
+const toggleModal = () => 
   if (isModalVisible.value) {
     gsap.to(modal.value, {
       opacity: 0,
