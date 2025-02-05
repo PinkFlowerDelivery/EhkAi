@@ -1,11 +1,3 @@
-Запуск сайта:
-1. Скачайте исходный код **[Source code.zip](https://github.com/OreaSync/EhkAi/archive/refs/heads/main.zip)**.
-2. Распакуйте загруженный архив в любую папку.
-3. Перейдите в загруженную папку и установите пакеты при помощи `npm install`
-4. Запустите файл `NpmStart.bat`
-3. Перейдите в загруженную папку и установите пакеты при помощи `npm install`.
-4. Запустите файл `NpmStart.bat`.
-
 <h3 align="center">Linux</h3>
 
 Установка NodeJS:
